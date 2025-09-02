@@ -1,0 +1,17 @@
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.csproj.AssemblyReference.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.AssemblyInfoInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.AssemblyInfo.cs
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.csproj.CoreCompileInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Notifications.deps.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Notifications.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Notifications.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Identity.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Shared.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Shared.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\bin\Debug\net8.0\TaskManager.Identity.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskMana.3822559A.Up2Date
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\refint\TaskManager.Notifications.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\ref\TaskManager.Notifications.dll

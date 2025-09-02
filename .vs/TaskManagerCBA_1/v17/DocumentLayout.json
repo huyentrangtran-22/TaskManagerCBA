@@ -1,0 +1,269 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BDE27F1D-589C-4F5B-8DF7-EE4FFA8E9106}|TaskManager.Projects\\TaskManager.Projects.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.projects\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDE27F1D-589C-4F5B-8DF7-EE4FFA8E9106}|TaskManager.Projects\\TaskManager.Projects.csproj|solutionrelative:taskmanager.projects\\services\\projectservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\views\\project\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\views\\project\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\controllers\\projectcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDE27F1D-589C-4F5B-8DF7-EE4FFA8E9106}|TaskManager.Projects\\TaskManager.Projects.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.projects\\dtos\\projectupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDE27F1D-589C-4F5B-8DF7-EE4FFA8E9106}|TaskManager.Projects\\TaskManager.Projects.csproj|solutionrelative:taskmanager.projects\\dtos\\projectupdatedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB873324-E0C6-4485-ADA8-EAB0F78CE212}|TaskManager.Shared\\TaskManager.Shared.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.shared\\entities\\projectmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB873324-E0C6-4485-ADA8-EAB0F78CE212}|TaskManager.Shared\\TaskManager.Shared.csproj|solutionrelative:taskmanager.shared\\entities\\projectmember.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\views\\project\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8BF58DC1-AB2E-4FF1-88C8-DE3453DBC3ED}|TaskManager.Identity\\TaskManager.Identity.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.identity\\dbcontext\\identitydbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8BF58DC1-AB2E-4FF1-88C8-DE3453DBC3ED}|TaskManager.Identity\\TaskManager.Identity.csproj|solutionrelative:taskmanager.identity\\dbcontext\\identitydbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\views\\project\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\views\\project\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BDE27F1D-589C-4F5B-8DF7-EE4FFA8E9106}|TaskManager.Projects\\TaskManager.Projects.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.projects\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BDE27F1D-589C-4F5B-8DF7-EE4FFA8E9106}|TaskManager.Projects\\TaskManager.Projects.csproj|solutionrelative:taskmanager.projects\\entities\\project.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB873324-E0C6-4485-ADA8-EAB0F78CE212}|TaskManager.Shared\\TaskManager.Shared.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.shared\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB873324-E0C6-4485-ADA8-EAB0F78CE212}|TaskManager.Shared\\TaskManager.Shared.csproj|solutionrelative:taskmanager.shared\\data\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CB873324-E0C6-4485-ADA8-EAB0F78CE212}|TaskManager.Shared\\TaskManager.Shared.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.shared\\entities\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CB873324-E0C6-4485-ADA8-EAB0F78CE212}|TaskManager.Shared\\TaskManager.Shared.csproj|solutionrelative:taskmanager.shared\\entities\\taskitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\controllers\\notificationcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|c:\\users\\windows\\source\\repos\\taskmanagercba_1\\taskmanager.web\\views\\notification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7897B185-DC50-4340-8B33-420F5CBC9779}|TaskManager.Web\\TaskManager.Web.csproj|solutionrelative:taskmanager.web\\views\\notification\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Project\\Edit.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Views\\Project\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Project\\Edit.cshtml",
+              "RelativeToolTip": "TaskManager.Web\\Views\\Project\\Edit.cshtml",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAYwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T17:44:32.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProjectService.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Projects\\Services\\ProjectService.cs",
+              "RelativeDocumentMoniker": "TaskManager.Projects\\Services\\ProjectService.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Projects\\Services\\ProjectService.cs",
+              "RelativeToolTip": "TaskManager.Projects\\Services\\ProjectService.cs",
+              "ViewState": "AgIAAIEAAAAAAAAAAAAQwIwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T05:01:49.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ProjectUpdateDto.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Projects\\DTOs\\ProjectUpdateDto.cs",
+              "RelativeDocumentMoniker": "TaskManager.Projects\\DTOs\\ProjectUpdateDto.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Projects\\DTOs\\ProjectUpdateDto.cs",
+              "RelativeToolTip": "TaskManager.Projects\\DTOs\\ProjectUpdateDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T17:21:31.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Project\\Create.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Views\\Project\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Project\\Create.cshtml",
+              "RelativeToolTip": "TaskManager.Web\\Views\\Project\\Create.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T16:07:18.521Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProjectController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Controllers\\ProjectController.cs",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Controllers\\ProjectController.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Controllers\\ProjectController.cs",
+              "RelativeToolTip": "TaskManager.Web\\Controllers\\ProjectController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAAkwE8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T16:25:11.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProjectMember.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Shared\\Entities\\ProjectMember.cs",
+              "RelativeDocumentMoniker": "TaskManager.Shared\\Entities\\ProjectMember.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Shared\\Entities\\ProjectMember.cs",
+              "RelativeToolTip": "TaskManager.Shared\\Entities\\ProjectMember.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T16:43:45.351Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "TaskManager.Web\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T03:41:24.829Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Project\\Delete.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Views\\Project\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Project\\Delete.cshtml",
+              "RelativeToolTip": "TaskManager.Web\\Views\\Project\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T06:24:16.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IdentityDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Identity\\DbContext\\IdentityDbContextFactory.cs",
+              "RelativeDocumentMoniker": "TaskManager.Identity\\DbContext\\IdentityDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Identity\\DbContext\\IdentityDbContextFactory.cs",
+              "RelativeToolTip": "TaskManager.Identity\\DbContext\\IdentityDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T06:44:47.477Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Project.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Projects\\Entities\\Project.cs",
+              "RelativeDocumentMoniker": "TaskManager.Projects\\Entities\\Project.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Projects\\Entities\\Project.cs",
+              "RelativeToolTip": "TaskManager.Projects\\Entities\\Project.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T05:24:04.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Program.cs",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Program.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Program.cs",
+              "RelativeToolTip": "TaskManager.Web\\Program.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAwwDUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T03:41:33.38Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Shared\\Data\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "TaskManager.Shared\\Data\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Shared\\Data\\AppDbContextFactory.cs",
+              "RelativeToolTip": "TaskManager.Shared\\Data\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T03:56:03.876Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TaskItem.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Shared\\Entities\\TaskItem.cs",
+              "RelativeDocumentMoniker": "TaskManager.Shared\\Entities\\TaskItem.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Shared\\Entities\\TaskItem.cs",
+              "RelativeToolTip": "TaskManager.Shared\\Entities\\TaskItem.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA5wB8AAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T03:57:12.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Notification\\Index.cshtml",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Views\\Notification\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Views\\Notification\\Index.cshtml",
+              "RelativeToolTip": "TaskManager.Web\\Views\\Notification\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-09-01T03:40:31.3Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "NotificationController.cs",
+              "DocumentMoniker": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Controllers\\NotificationController.cs",
+              "RelativeDocumentMoniker": "TaskManager.Web\\Controllers\\NotificationController.cs",
+              "ToolTip": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Web\\Controllers\\NotificationController.cs",
+              "RelativeToolTip": "TaskManager.Web\\Controllers\\NotificationController.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAQwA8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-01T03:39:55.494Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Projects.deps.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Projects.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Projects.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.csproj.AssemblyReference.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.AssemblyInfoInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.AssemblyInfo.cs
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.csproj.CoreCompileInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\refint\TaskManager.Projects.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\ref\TaskManager.Projects.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Identity.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Identity.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskMana.9F2A8253.Up2Date
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Projects.runtimeconfig.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.genruntimeconfig.cache

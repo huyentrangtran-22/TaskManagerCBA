@@ -1,0 +1,14 @@
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.csproj.AssemblyReference.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.AssemblyInfoInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.AssemblyInfo.cs
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.csproj.CoreCompileInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\bin\Debug\net8.0\TaskManager.Identity.deps.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\bin\Debug\net8.0\TaskManager.Identity.runtimeconfig.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\bin\Debug\net8.0\TaskManager.Identity.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\bin\Debug\net8.0\TaskManager.Identity.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\refint\TaskManager.Identity.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\TaskManager.Identity.genruntimeconfig.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Identity\obj\Debug\net8.0\ref\TaskManager.Identity.dll

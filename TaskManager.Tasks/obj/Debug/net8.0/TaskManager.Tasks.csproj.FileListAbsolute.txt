@@ -1,0 +1,17 @@
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.csproj.AssemblyReference.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.AssemblyInfoInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.AssemblyInfo.cs
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.csproj.CoreCompileInputs.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Tasks.deps.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Tasks.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Tasks.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Identity.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Shared.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Shared.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\bin\Debug\net8.0\TaskManager.Identity.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskMana.1EC1C988.Up2Date
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\refint\TaskManager.Tasks.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\TaskManager.Tasks.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Tasks\obj\Debug\net8.0\ref\TaskManager.Tasks.dll
