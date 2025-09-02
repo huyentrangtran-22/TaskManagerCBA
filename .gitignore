@@ -1,0 +1,29 @@
+## Build results
+bin/
+obj/
+out/
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## VS Code
+.vscode/
+
+## Visual Studio
+.vs/
+*.dbmdl
+*.jfm
+
+## NuGet
+*.nupkg
+*.snupkg
+packages/
+*.nuspec
+
+## Others
+*.log
+*.DS_Store
+*.env
