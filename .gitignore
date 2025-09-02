@@ -1,7 +1,9 @@
-## Build results
+﻿## Build results
 bin/
 obj/
 out/
+Debug/
+Release/
 
 ## User-specific files
 *.suo
@@ -23,7 +25,24 @@ out/
 packages/
 *.nuspec
 
-## Others
+## Entity Framework / Migrations temp
+*.ide
+*.sql
+
+## Logs & Temp
 *.log
-*.DS_Store
+*.tlog
+*.tmp
+*.bak
+
+## OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+## Env files
 *.env
+.env.*
+
+## Rider (nếu có dùng JetBrains Rider IDE)
+.idea/
