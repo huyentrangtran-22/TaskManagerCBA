@@ -1,5 +1,5 @@
-﻿using TaskManager.Shared.Entities; // để dùng TaskStatus
-
+﻿using TaskManager.Shared.Dtos;
+using TaskManager.Shared.Entities; // để dùng TaskStatus
 namespace TaskManager.Tasks.Dtos
 {
     public class TaskDto
@@ -10,11 +10,12 @@ namespace TaskManager.Tasks.Dtos
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string? AssignedUserId { get; set; }
-        public TaskStatus Status { get; set; } = TaskStatus.New;
+        public Shared.Entities.TaskStatus Status { get; set; } = Shared.Entities.TaskStatus.New;
+        public int ProjectId { get; set; }
 
         public TaskDto() { }
 
-        public TaskDto(int id, string name, string? description, DateTime start, DateTime end, string? userId, TaskStatus status)
+        public TaskDto(int id, string name, string? description, DateTime start, DateTime end, string? userId, Shared.Entities.TaskStatus status)
         {
             Id = id;
             Name = name;
@@ -28,15 +29,19 @@ namespace TaskManager.Tasks.Dtos
 
     public class TaskCreateDto
     {
-        public string Name { get; set; } = string.Empty;
-        public string? Description { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
         public DateTime StartDate { get; set; }
-        public DateTime EndDate { get; set; }
-        public string? AssignedUserId { get; set; }
-        public TaskStatus Status { get; set; } = TaskStatus.New;
+        public DateTime? EndDate { get; set; }
+
+        public string AssignedUserId { get; set; }
+        public Shared.Entities.TaskStatus Status { get; set; }
+
+        public int ProjectId { get; set; } // ✅ để liên kết với Project
+
     }
 
-        public class TaskUpdateDto
+    public class TaskUpdateDto
     {
         public int Id { get; set; }
         public string Name { get; set; } = string.Empty;
@@ -44,6 +49,6 @@ namespace TaskManager.Tasks.Dtos
         public DateTime StartDate { get; set; }
         public DateTime EndDate { get; set; }
         public string? AssignedUserId { get; set; }
-        public TaskStatus Status { get; set; } = TaskStatus.New;
+        public Shared.Entities.TaskStatus Status { get; set; } = Shared.Entities.TaskStatus.New;
     }
 }

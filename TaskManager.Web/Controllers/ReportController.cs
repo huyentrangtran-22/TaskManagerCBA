@@ -1,13 +1,15 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TaskManager.Application.Services;
 using TaskManager.Projects.Interfaces;
+using TaskManager.Shared.Entities;
 using TaskManager.Tasks.Dtos;
 using TaskManager.Tasks.Services;
-using TaskManager.Shared.Entities;
 
 
 namespace TaskManager.Web.Controllers
 {
+    [Authorize]
     public class ReportController : Controller
     {
         private readonly IProjectService _projectService;
@@ -33,7 +35,7 @@ namespace TaskManager.Web.Controllers
             {
                 var projectTasks = tasks.Where(t => t.Id == p.Id).ToList();
                 int total = projectTasks.Count;
-                var completed = tasks.Count(t => t.Status == TaskStatus.Completed);
+                var completed = tasks.Count(t => t.Status == Shared.Entities.TaskStatus.Completed);
 
                 return new ProjectReportViewModel
                 {

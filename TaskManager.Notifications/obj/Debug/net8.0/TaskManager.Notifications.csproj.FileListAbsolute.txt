@@ -15,3 +15,4 @@ C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Deb
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\refint\TaskManager.Notifications.dll
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.pdb
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\ref\TaskManager.Notifications.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Notifications\obj\Debug\net8.0\TaskManager.Notifications.sourcelink.json

@@ -15,3 +15,4 @@ C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Shared\obj\Debug\net8
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Shared\obj\Debug\net8.0\TaskManager.Shared.pdb
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Shared\obj\Debug\net8.0\TaskManager.Shared.genruntimeconfig.cache
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Shared\obj\Debug\net8.0\ref\TaskManager.Shared.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Shared\obj\Debug\net8.0\TaskManager.Shared.sourcelink.json

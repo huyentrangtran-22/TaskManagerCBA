@@ -15,3 +15,8 @@ C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\ne
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskMana.9F2A8253.Up2Date
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Projects.runtimeconfig.json
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.genruntimeconfig.cache
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\obj\Debug\net8.0\TaskManager.Projects.sourcelink.json
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Shared.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Tasks.dll
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Tasks.pdb
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Projects\bin\Debug\net8.0\TaskManager.Shared.pdb

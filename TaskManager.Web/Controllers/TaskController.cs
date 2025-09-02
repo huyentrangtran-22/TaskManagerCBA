@@ -1,18 +1,25 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using System.Threading.Tasks;
 using TaskManager.Application.Services;
+using TaskManager.Projects.Interfaces;
 using TaskManager.Tasks.Dtos;
 using TaskManager.Tasks.Services;
+using MyStatus = TaskManager.Shared.Entities.TaskStatus;
 
 namespace TaskManager.Web.Controllers
 {
+    [Authorize]
     public class TaskController : Controller
     {
         private readonly ITaskService _taskService;
+        private readonly IProjectService _projectService;
 
-        public TaskController(ITaskService taskService)
+        public TaskController(ITaskService taskService, IProjectService projectService)
         {
             _taskService = taskService;
+            _projectService = projectService;
         }
 
         // GET: /Task
@@ -22,10 +29,20 @@ namespace TaskManager.Web.Controllers
             return View(tasks);
         }
 
+  
+
         // GET: /Task/Create
-        public IActionResult Create()
+        public async Task<IActionResult> Create(MyStatus? status)
         {
-            return View();
+            await LoadProjectsAsync();
+
+            var dto = new TaskCreateDto
+            {
+                Status = status.HasValue ? status.Value : MyStatus.Backlog
+
+            };
+
+            return View(dto);
         }
 
         // POST: /Task/Create
@@ -34,13 +51,17 @@ namespace TaskManager.Web.Controllers
         public async Task<IActionResult> Create(TaskCreateDto taskDto)
         {
             if (!ModelState.IsValid)
+            {
+                await LoadProjectsAsync();
                 return View(taskDto);
+            }
 
             var createdTask = await _taskService.CreateAsync(taskDto);
 
             if (createdTask == null)
             {
-                ModelState.AddModelError(string.Empty, "Cannot create task");
+                ModelState.AddModelError(string.Empty, "Không thể tạo nhiệm vụ");
+                await LoadProjectsAsync();
                 return View(taskDto);
             }
 
@@ -53,18 +74,18 @@ namespace TaskManager.Web.Controllers
             var task = await _taskService.GetByIdAsync(id);
             if (task == null) return NotFound();
 
-            var taskDto = new TaskUpdateDto
+            var dto = new TaskUpdateDto
             {
                 Id = task.Id,
                 Name = task.Name,
                 Description = task.Description,
                 StartDate = task.StartDate,
-                EndDate = task.EndDate,
+                EndDate = (DateTime)task.EndDate,
                 AssignedUserId = task.AssignedUserId,
                 Status = task.Status
             };
 
-            return View(taskDto);
+            return View(dto);
         }
 
         // POST: /Task/Edit/5
@@ -81,7 +102,7 @@ namespace TaskManager.Web.Controllers
 
             if (updatedTask == null)
             {
-                ModelState.AddModelError(string.Empty, "Cannot update task");
+                ModelState.AddModelError(string.Empty, "Không thể cập nhật nhiệm vụ");
                 return View(taskDto);
             }
 
@@ -94,23 +115,30 @@ namespace TaskManager.Web.Controllers
             var task = await _taskService.GetByIdAsync(id);
             if (task == null) return NotFound();
 
-            return View(task);
+            return View(task); // Hiển thị trang xác nhận xóa
         }
 
         // POST: /Task/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            bool success = await _taskService.DeleteAsync(id);
+            var success = await _taskService.DeleteAsync(id);
 
             if (!success)
             {
-                TempData["Error"] = "Cannot delete task";
-                return RedirectToAction(nameof(Index));
+                return BadRequest("Không thể xóa nhiệm vụ."); // Trả về lỗi rõ ràng
             }
 
-            return RedirectToAction(nameof(Index));
+            return Ok(); // Trả về 200 nếu xóa thành công
+
+        }
+
+        // 🔧 Helper để load danh sách project
+        private async Task LoadProjectsAsync()
+        {
+            var projects = await _projectService.GetAllAsync();
+            ViewBag.ProjectList = new SelectList(projects, "Id", "Name");
         }
     }
 }

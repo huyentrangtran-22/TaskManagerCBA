@@ -210,3 +210,4 @@ C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Web\obj\Debug\net8.0\
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Web\obj\Debug\net8.0\TaskManager.Web.genruntimeconfig.cache
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Web\obj\Debug\net8.0\ref\TaskManager.Web.dll
 C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Web\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\Windows\source\repos\TaskManagerCBA_1\TaskManager.Web\obj\Debug\net8.0\TaskManager.Web.sourcelink.json

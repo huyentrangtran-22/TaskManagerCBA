@@ -1705,7 +1705,8 @@
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.Extensions.Identity.Core": "8.0.19",
-          "TaskManager.Identity": "1.0.0"
+          "TaskManager.Identity": "1.0.0",
+          "TaskManager.Tasks": "1.0.0"
         },
         "runtime": {
           "TaskManager.Projects.dll": {

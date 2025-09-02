@@ -1,0 +1,96 @@
+﻿@model TaskManager.Projects.Dtos.ProjectDto
+
+@{
+    ViewData["Title"] = "Project Details";
+}
+
+<h1 class="mb-4 text-primary fw-bold">📋 Project Details</h1>
+
+<div class="card shadow-sm border-0 rounded-4 mb-4">
+    <div class="card-body">
+        <!-- 🏷️ Tên dự án -->
+        <h2 class="card-title text-primary fw-bold mb-3">@Model.Name</h2>
+
+        <!-- 📃 Mô tả -->
+        @if (!string.IsNullOrWhiteSpace(Model.Description))
+        {
+            <p class="card-text text-muted fs-6">@Model.Description</p>
+        }
+
+        <!-- 📅 Ngày bắt đầu / kết thúc -->
+        <div class="row mb-3">
+            <div class="col-md-6">
+                <p><strong>Start Date:</strong> @Model.StartDate.ToString("yyyy-MM-dd")</p>
+            </div>
+            <div class="col-md-6">
+                <p><strong>End Date:</strong> @(Model.EndDate?.ToString("yyyy-MM-dd") ?? "-")</p>
+            </div>
+        </div>
+
+        <!-- 🚦 Trạng thái -->
+        <p>
+            <strong>Status:</strong>
+            <span class="badge bg-info text-dark px-3 py-2 rounded-pill">@Model.Status</span>
+        </p>
+
+        <!-- 👥 Thành viên -->
+        <div class="mb-3">
+            <strong>Members:</strong>
+            @if (Model.MemberUsernames?.Any() == true)
+            {
+                <ul class="list-inline mt-2">
+                    @foreach (var username in Model.MemberUsernames)
+                    {
+                        <li class="list-inline-item badge bg-secondary px-3 py-2 rounded-pill">@username</li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <span class="text-muted">No members assigned</span>
+            }
+        </div>
+
+        <!-- 📦 Danh sách công việc -->
+        <div class="mt-4">
+            <h4 class="text-primary fw-bold mb-3">📝 Tasks</h4>
+            @if (Model.Tasks?.Any() == true)
+            {
+                <ul class="list-group">
+                    @foreach (var task in Model.Tasks)
+                    {
+                        <li class="list-group-item d-flex justify-content-between align-items-center">
+                            <div>
+                                <strong>@task.Name</strong>
+                                <span class="badge @(task.Status == TaskManager.Shared.Entities.TaskStatus.Completed ? "bg-success" : "bg-warning")">
+                                    @(task.Status == TaskManager.Shared.Entities.TaskStatus.Completed ? "✅ Done" : "⏳ Pending")
+                                </span>
+                            </div>
+                            <a asp-controller="Task" asp-action="Details" asp-route-id="@task.Id" class="btn btn-sm btn-outline-primary">View</a>
+                        </li>
+                    }
+                </ul>
+            }
+            else
+            {
+                <p class="text-muted">No tasks assigned to this project.</p>
+            }
+        </div>
+        <!-- 🔔 Phản hồi hệ thống -->
+        @if (!string.IsNullOrWhiteSpace(Model.Message))
+        {
+            <div class="alert @(Model.Success ? "alert-success" : "alert-danger") mt-3">
+                @Model.Message
+            </div>
+        }
+
+        <!-- 🛠️ Nút thao tác -->
+        <div class="mt-4 d-flex flex-wrap gap-2">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">✏️ Edit</a>
+            <form asp-action="Delete" asp-route-id="@Model.Id" method="post" onsubmit="return confirm('Are you sure you want to delete this project?');">
+                <button type="submit" class="btn btn-danger">🗑️ Delete</button>
+            </form>
+            <a asp-action="Index" class="btn btn-secondary">⬅️ Back to List</a>
+        </div>
+    </div>
+</div>

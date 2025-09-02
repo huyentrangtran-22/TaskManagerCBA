@@ -37,6 +37,13 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
 .AddEntityFrameworkStores<AppDbContext>()
 .AddDefaultTokenProviders();
 
+builder.Services.ConfigureApplicationCookie(options =>
+{
+    options.LoginPath = "/Account/Login"; // chuyển hướng nếu chưa đăng nhập
+    options.AccessDeniedPath = "/Account/AccessDenied"; // nếu không đủ quyền
+});
+
+
 // ===== Add MVC =====
 builder.Services.AddControllersWithViews();
 
@@ -61,6 +68,6 @@ app.UseAuthorization();
 // ===== Map routes =====
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Account}/{action=Login}/{id?}");
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

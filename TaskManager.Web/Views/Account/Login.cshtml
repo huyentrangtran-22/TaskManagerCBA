@@ -4,19 +4,24 @@
     ViewData["Title"] = "Login";
 }
 
-<div class="row justify-content-center mt-5">
-    <div class="col-md-6 col-lg-5">
-        <h2 class="text-center mb-4">Login</h2>
+<div class="login-page">
+    <div class="login-info">
+        <h1 class="logo">🐾 MEoW</h1>
+        <p class="slogan">Your friendly task manager</p>
+    </div>
+
+    <div class="login-form-box">
+        <h2 class="form-title">Login</h2>
 
         <form asp-action="Login" method="post">
-            <div class="mb-3">
-                <label asp-for="Username" class="form-label"></label>
+            <div class="form-group">
+                <label asp-for="Username" class="form-label">Username</label>
                 <input asp-for="Username" class="form-control" />
                 <span asp-validation-for="Username" class="text-danger"></span>
             </div>
 
-            <div class="mb-3">
-                <label asp-for="Password" class="form-label"></label>
+            <div class="form-group">
+                <label asp-for="Password" class="form-label">Password</label>
                 <input asp-for="Password" class="form-control" type="password" />
                 <span asp-validation-for="Password" class="text-danger"></span>
             </div>
@@ -26,10 +31,10 @@
                 <div class="alert alert-danger">@ViewBag.Error</div>
             }
 
-            <button type="submit" class="btn btn-primary w-100">Login</button>
+            <button type="submit" class="btn-login">Login</button>
         </form>
 
-        <p class="text-center mt-3">
+        <p class="register-text">
             Don't have an account? <a asp-action="Register">Register here</a>
         </p>
     </div>

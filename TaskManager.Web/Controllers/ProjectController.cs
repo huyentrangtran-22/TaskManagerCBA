@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -11,6 +12,7 @@ using TaskManager.Shared.Utils; // chứa ServiceResult
 
 namespace TaskManager.Web.Controllers
 {
+    [Authorize]
     public class ProjectController : Controller
     {
         private readonly IProjectService _projectService;
@@ -32,6 +34,19 @@ namespace TaskManager.Web.Controllers
             return View(projectDtos);
 
         }
+
+        // GET: /Project/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            var project = await _projectService.GetByIdAsync(id);
+            if (project == null)
+            {
+                return NotFound();
+            }
+
+            return View(project); // Truyền ProjectDto vào view
+        }
+
 
         // GET: /Project/Create
         public async Task<IActionResult> Create()

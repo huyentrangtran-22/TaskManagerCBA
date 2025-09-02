@@ -1,52 +1,64 @@
 ﻿@model TaskManager.Tasks.Dtos.TaskCreateDto
 
 @{
-    ViewData["Title"] = "Create Task";
+    ViewData["Title"] = "Tạo nhiệm vụ";
 }
 
-<h1>Create Task</h1>
+<h1 class="mb-4 text-primary fw-bold">📝 Tạo nhiệm vụ mới</h1>
 
 <form asp-action="Create" method="post">
     <div class="mb-3">
-        <label asp-for="Name" class="form-label"></label>
-        <input asp-for="Name" class="form-control" />
+        <label asp-for="Name" class="form-label">Tên nhiệm vụ</label>
+        <input asp-for="Name" class="form-control" placeholder="Nhập tên nhiệm vụ" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Description" class="form-label"></label>
-        <textarea asp-for="Description" class="form-control"></textarea>
+        <label asp-for="Description" class="form-label">Mô tả</label>
+        <textarea asp-for="Description" class="form-control" placeholder="Chi tiết công việc..."></textarea>
         <span asp-validation-for="Description" class="text-danger"></span>
     </div>
 
-    <div class="mb-3">
-        <label asp-for="StartDate" class="form-label"></label>
-        <input asp-for="StartDate" type="date" class="form-control" />
-        <span asp-validation-for="StartDate" class="text-danger"></span>
+    <div class="row mb-3">
+        <div class="col-md-6">
+            <label asp-for="StartDate" class="form-label">Ngày bắt đầu</label>
+            <input asp-for="StartDate" type="date" class="form-control" />
+            <span asp-validation-for="StartDate" class="text-danger"></span>
+        </div>
+        <div class="col-md-6">
+            <label asp-for="EndDate" class="form-label">Ngày kết thúc</label>
+            <input asp-for="EndDate" type="date" class="form-control" />
+            <span asp-validation-for="EndDate" class="text-danger"></span>
+        </div>
     </div>
 
     <div class="mb-3">
-        <label asp-for="EndDate" class="form-label"></label>
-        <input asp-for="EndDate" type="date" class="form-control" />
-        <span asp-validation-for="EndDate" class="text-danger"></span>
-    </div>
-
-    <div class="mb-3">
-        <label asp-for="AssignedUserId" class="form-label"></label>
-        <input asp-for="AssignedUserId" class="form-control" />
+        <label asp-for="AssignedUserId" class="form-label">Người phụ trách</label>
+        <input asp-for="AssignedUserId" class="form-control" placeholder="Nhập tên người dùng" />
         <span asp-validation-for="AssignedUserId" class="text-danger"></span>
     </div>
 
     <div class="mb-3">
-        <label asp-for="Status" class="form-label"></label>
-        <select asp-for="Status" class="form-select" asp-items="Html.GetEnumSelectList<TaskManager.Shared.Entities.TaskStatus>()">
-            <option value="">-- Select Status --</option>
+        <label asp-for="Status" class="form-label">Trạng thái</label>
+        <select asp-for="Status" class="form-select"
+                asp-items="Html.GetEnumSelectList<TaskManager.Shared.Entities.TaskStatus>()">
+            <option value="">-- Chọn trạng thái --</option>
         </select>
         <span asp-validation-for="Status" class="text-danger"></span>
     </div>
 
-    <button type="submit" class="btn btn-primary">Create</button>
-    <a asp-action="Index" class="btn btn-secondary">Back to List</a>
+    <div class="mb-3">
+        <label asp-for="ProjectId" class="form-label">Dự án</label>
+        <select asp-for="ProjectId" class="form-select" asp-items="ViewBag.ProjectList">
+            <option value="">-- Chọn dự án --</option>
+        </select>
+        <span asp-validation-for="ProjectId" class="text-danger"></span>
+    </div>
+
+    <div class="mt-4">
+        <button type="submit" class="btn btn-success me-2">✅ Tạo nhiệm vụ</button>
+        <a asp-action="Index" class="btn btn-outline-secondary">⬅️ Quay lại danh sách</a>
+    </div>
 </form>
 
 @section Scripts {

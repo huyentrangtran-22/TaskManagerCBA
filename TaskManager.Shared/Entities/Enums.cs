@@ -1,10 +1,15 @@
-﻿namespace TaskManager.Shared.Entities
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace TaskManager.Shared.Entities
 {
     public enum TaskStatus
     {
-        Backlog,
-        New,
-        InProgress,
-        Completed
+        Backlog = 0,
+        New = 1,
+        InProgress = 2,
+        Completed = 3,
+        Cancelled = 4
     }
+
+
 }

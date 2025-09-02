@@ -198,6 +198,9 @@
             "projectReferences": {
               "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Identity\\TaskManager.Identity.csproj": {
                 "projectPath": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Identity\\TaskManager.Identity.csproj"
+              },
+              "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Tasks\\TaskManager.Tasks.csproj": {
+                "projectPath": "C:\\Users\\Windows\\source\\repos\\TaskManagerCBA_1\\TaskManager.Tasks\\TaskManager.Tasks.csproj"
               }
             }
           }

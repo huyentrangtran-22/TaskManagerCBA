@@ -1,8 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using TaskManager.Application.Services;
-using TaskManager.Shared.Data;        // AppDbContext
+using TaskManager.Shared.Data;
 using TaskManager.Shared.Entities;
-using TaskManager.Tasks.Dtos;        // TaskDto, TaskCreateDto, TaskUpdateDto
+using TaskManager.Tasks.Dtos;
 
 namespace TaskManager.Tasks.Services
 {
@@ -24,10 +24,11 @@ namespace TaskManager.Tasks.Services
                     Id = t.Id,
                     Name = t.Title,
                     Description = t.Description,
-                    StartDate = (DateTime)t.StartDate,
-                    EndDate = (DateTime)t.EndDate,
-                    AssignedUserId = t.AssignedUserId,
-                    Status = (TaskStatus)t.Status
+                    StartDate = t.StartDate,
+                    EndDate = t.EndDate,
+                    AssignedUserId = string.IsNullOrWhiteSpace(t.AssignedUserId) ? "Chưa phân công" : t.AssignedUserId,
+                    Status = (Shared.Entities.TaskStatus)t.Status,
+                    ProjectId = t.ProjectId
                 })
                 .ToListAsync();
         }
@@ -43,24 +44,32 @@ namespace TaskManager.Tasks.Services
                 Id = task.Id,
                 Name = task.Title,
                 Description = task.Description,
-                StartDate = (DateTime)task.StartDate,
-                EndDate = (DateTime)task.EndDate,
-                AssignedUserId = task.AssignedUserId,
-                Status = (TaskStatus)task.Status
+                StartDate = task.StartDate,
+                EndDate = task.EndDate,
+                AssignedUserId = string.IsNullOrWhiteSpace(task.AssignedUserId) ? "Chưa phân công" : task.AssignedUserId,
+                Status = (Shared.Entities.TaskStatus)task.Status,
+                ProjectId = task.ProjectId
             };
         }
 
         // Tạo task mới
         public async Task<TaskDto?> CreateAsync(TaskCreateDto dto)
         {
+            var projectExists = await _context.Projects.AnyAsync(p => p.Id == dto.ProjectId);
+            if (!projectExists)
+            {
+                throw new Exception($"ProjectId {dto.ProjectId} không tồn tại.");
+            }
+
             var task = new TaskItem
             {
                 Title = dto.Name,
                 Description = dto.Description,
                 StartDate = dto.StartDate,
-                EndDate = dto.EndDate,
-                AssignedUserId = dto.AssignedUserId,
-                Status = (Shared.Entities.TaskStatus)dto.Status
+                EndDate = (DateTime)dto.EndDate,
+                AssignedUserId = string.IsNullOrWhiteSpace(dto.AssignedUserId) ? null : dto.AssignedUserId,
+                Status = (TaskManager.Shared.Entities.TaskStatus)(int)dto.Status,
+                ProjectId = dto.ProjectId
             };
 
             _context.TaskItems.Add(task);
@@ -71,10 +80,11 @@ namespace TaskManager.Tasks.Services
                 Id = task.Id,
                 Name = task.Title,
                 Description = task.Description,
-                StartDate = (DateTime)task.StartDate,
-                EndDate = (DateTime)task.EndDate,
-                AssignedUserId = task.AssignedUserId,
-                Status = (TaskStatus)task.Status
+                StartDate = task.StartDate,
+                EndDate = task.EndDate,
+                AssignedUserId = string.IsNullOrWhiteSpace(task.AssignedUserId) ? "Chưa phân công" : task.AssignedUserId,
+                Status = (Shared.Entities.TaskStatus)(int)task.Status,
+                ProjectId = task.ProjectId
             };
         }
 
@@ -88,7 +98,7 @@ namespace TaskManager.Tasks.Services
             task.Description = dto.Description;
             task.StartDate = dto.StartDate;
             task.EndDate = dto.EndDate;
-            task.AssignedUserId = dto.AssignedUserId;
+            task.AssignedUserId = string.IsNullOrWhiteSpace(dto.AssignedUserId) ? null : dto.AssignedUserId;
             task.Status = (Shared.Entities.TaskStatus)dto.Status;
 
             await _context.SaveChangesAsync();
@@ -98,10 +108,11 @@ namespace TaskManager.Tasks.Services
                 Id = task.Id,
                 Name = task.Title,
                 Description = task.Description,
-                StartDate = (DateTime)task.StartDate,
-                EndDate = (DateTime)task.EndDate,
-                AssignedUserId = task.AssignedUserId,
-                Status = (TaskStatus)task.Status
+                StartDate = task.StartDate,
+                EndDate = task.EndDate,
+                AssignedUserId = string.IsNullOrWhiteSpace(task.AssignedUserId) ? "Chưa phân công" : task.AssignedUserId,
+                Status = (Shared.Entities.TaskStatus)task.Status,
+                ProjectId = task.ProjectId
             };
         }
 
@@ -122,7 +133,7 @@ namespace TaskManager.Tasks.Services
             var task = await _context.TaskItems.FindAsync(taskId);
             if (task == null) return false;
 
-            task.AssignedUserId = userId;
+            task.AssignedUserId = string.IsNullOrWhiteSpace(userId) ? null : userId;
             await _context.SaveChangesAsync();
             return true;
         }

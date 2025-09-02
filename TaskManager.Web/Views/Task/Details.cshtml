@@ -1,0 +1,39 @@
+﻿@model TaskManager.Tasks.Dtos.TaskDto
+
+@{
+    ViewData["Title"] = "Chi tiết nhiệm vụ";
+}
+
+<h2 class="fw-bold text-primary mb-4">📋 Chi tiết nhiệm vụ</h2>
+
+<div class="card shadow-sm">
+    <div class="card-body">
+        <dl class="row">
+            <dt class="col-sm-3">📝 Tên nhiệm vụ</dt>
+            <dd class="col-sm-9">@Model.Name</dd>
+
+            <dt class="col-sm-3">📄 Mô tả</dt>
+            <dd class="col-sm-9">@Model.Description</dd>
+
+            <dt class="col-sm-3">👤 Người phụ trách</dt>
+            <dd class="col-sm-9">@Model.AssignedUserId</dd>
+
+            <dt class="col-sm-3">📌 Trạng thái</dt>
+            <dd class="col-sm-9">@Model.Status</dd>
+
+            <dt class="col-sm-3">📅 Ngày bắt đầu</dt>
+            <div class="col-sm-9">@Model.StartDate.ToString("dd/MM/yyyy")</div>
+
+            <dt class="col-sm-3">📅 Ngày kết thúc</dt>
+            <dd class="col-sm-9">@Model.EndDate.ToString("dd/MM/yyyy")</dd>
+
+            <dt class="col-sm-3">📁 Dự án</dt>
+            <dd class="col-sm-9">@Model.ProjectId</dd>
+        </dl>
+
+        <div class="mt-4">
+            <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning me-2">✏️ Sửa</a>
+            <a asp-action="Index" class="btn btn-outline-secondary">⬅️ Quay lại danh sách</a>
+        </div>
+    </div>
+</div>

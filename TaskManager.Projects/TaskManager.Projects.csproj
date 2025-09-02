@@ -19,6 +19,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\TaskManager.Identity\TaskManager.Identity.csproj" />
+    <ProjectReference Include="..\TaskManager.Tasks\TaskManager.Tasks.csproj" />
   </ItemGroup>
 
 </Project>

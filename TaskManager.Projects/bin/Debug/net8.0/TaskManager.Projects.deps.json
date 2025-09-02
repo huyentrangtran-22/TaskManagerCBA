@@ -13,7 +13,8 @@
           "Microsoft.EntityFrameworkCore.Design": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
           "Microsoft.Extensions.Identity.Core": "8.0.19",
-          "TaskManager.Identity": "1.0.0"
+          "TaskManager.Identity": "1.0.0",
+          "TaskManager.Tasks": "1.0.0"
         },
         "runtime": {
           "TaskManager.Projects.dll": {}
@@ -54,11 +55,56 @@
           }
         }
       },
+      "EntityFramework/6.1.0": {
+        "runtime": {
+          "lib/net45/EntityFramework.SqlServer.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.30225.0"
+          },
+          "lib/net45/EntityFramework.dll": {
+            "assemblyVersion": "6.0.0.0",
+            "fileVersion": "6.1.30225.0"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "runtime": {
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
+          }
+        }
+      },
+      "Microsoft.AspNet.Identity.AspNetCoreCompat/0.3.4": {
+        "dependencies": {
+          "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
+          "Microsoft.Owin.Security.Cookies": "3.0.1",
+          "Microsoft.Owin.Security.Interop": "2.0.4"
+        },
+        "runtime": {
+          "lib/net461/Microsoft.AspNet.Identity.AspNetCoreCompat.dll": {
+            "assemblyVersion": "0.3.4.0",
+            "fileVersion": "0.3.4.18184"
+          }
+        }
+      },
+      "Microsoft.AspNet.Identity.Core/2.2.4": {
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.Core.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.4.50621"
+          }
+        }
+      },
+      "Microsoft.AspNet.Identity.EntityFramework/2.2.4": {
+        "dependencies": {
+          "EntityFramework": "6.1.0",
+          "Microsoft.AspNet.Identity.Core": "2.2.4"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.AspNet.Identity.EntityFramework.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.2.4.50621"
           }
         }
       },
@@ -216,6 +262,18 @@
           }
         }
       },
+      "Microsoft.AspNetCore.DataProtection.Extensions/2.0.3": {
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection": "2.3.0",
+          "Microsoft.Extensions.DependencyInjection": "9.0.8"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.DataProtection.Extensions.dll": {
+            "assemblyVersion": "2.0.3.0",
+            "fileVersion": "2.0.3.18114"
+          }
+        }
+      },
       "Microsoft.AspNetCore.Diagnostics.Abstractions/2.3.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.AspNetCore.Diagnostics.Abstractions.dll": {
@@ -326,15 +384,15 @@
           }
         }
       },
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.5": {
+      "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.19": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Relational": "9.0.8",
-          "Microsoft.Extensions.Identity.Stores": "8.0.5"
+          "Microsoft.Extensions.Identity.Stores": "8.0.19"
         },
         "runtime": {
           "lib/net8.0/Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll": {
-            "assemblyVersion": "8.0.5.0",
-            "fileVersion": "8.0.524.22404"
+            "assemblyVersion": "8.0.19.0",
+            "fileVersion": "8.0.1925.37204"
           }
         }
       },
@@ -1227,7 +1285,7 @@
           }
         }
       },
-      "Microsoft.Extensions.Identity.Stores/8.0.5": {
+      "Microsoft.Extensions.Identity.Stores/8.0.19": {
         "dependencies": {
           "Microsoft.Extensions.Caching.Abstractions": "9.0.8",
           "Microsoft.Extensions.Identity.Core": "8.0.19",
@@ -1236,7 +1294,7 @@
         "runtime": {
           "lib/net8.0/Microsoft.Extensions.Identity.Stores.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.0.524.22404"
+            "fileVersion": "8.0.1925.37204"
           }
         }
       },
@@ -1435,6 +1493,54 @@
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
       "Microsoft.NETCore.Targets/1.1.0": {},
+      "Microsoft.Owin/3.0.1": {
+        "dependencies": {
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        }
+      },
+      "Microsoft.Owin.Security/3.0.1": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.1",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        }
+      },
+      "Microsoft.Owin.Security.Cookies/3.0.1": {
+        "dependencies": {
+          "Microsoft.Owin": "3.0.1",
+          "Microsoft.Owin.Security": "3.0.1",
+          "Owin": "1.0.0"
+        },
+        "runtime": {
+          "lib/net45/Microsoft.Owin.Security.Cookies.dll": {
+            "assemblyVersion": "3.0.1.0",
+            "fileVersion": "3.0.40213.64"
+          }
+        }
+      },
+      "Microsoft.Owin.Security.Interop/2.0.4": {
+        "dependencies": {
+          "Microsoft.AspNetCore.DataProtection.Extensions": "2.0.3",
+          "Microsoft.Owin.Security": "3.0.1"
+        },
+        "runtime": {
+          "lib/net461/Microsoft.Owin.Security.Interop.dll": {
+            "assemblyVersion": "2.0.4.0",
+            "fileVersion": "2.0.4.18114"
+          }
+        }
+      },
       "Microsoft.SqlServer.Server/1.0.0": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.SqlServer.Server.dll": {
@@ -1492,6 +1598,14 @@
           "lib/netstandard2.0/Newtonsoft.Json.Bson.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.2.22727"
+          }
+        }
+      },
+      "Owin/1.0.0": {
+        "runtime": {
+          "lib/net40/Owin.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
           }
         }
       },
@@ -1822,12 +1936,39 @@
       "TaskManager.Identity/1.0.0": {
         "dependencies": {
           "Microsoft.AspNetCore.Identity": "2.3.1",
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.5",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.19",
           "Microsoft.EntityFrameworkCore": "9.0.8",
           "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8"
         },
         "runtime": {
           "TaskManager.Identity.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TaskManager.Shared/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNet.Identity.AspNetCoreCompat": "0.3.4",
+          "Microsoft.AspNet.Identity.EntityFramework": "2.2.4",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.19",
+          "Microsoft.EntityFrameworkCore": "9.0.8",
+          "Microsoft.EntityFrameworkCore.SqlServer": "9.0.8",
+          "TaskManager.Identity": "1.0.0"
+        },
+        "runtime": {
+          "TaskManager.Shared.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "TaskManager.Tasks/1.0.0": {
+        "dependencies": {
+          "TaskManager.Shared": "1.0.0"
+        },
+        "runtime": {
+          "TaskManager.Tasks.dll": {
             "assemblyVersion": "1.0.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -1855,12 +1996,40 @@
       "path": "azure.identity/1.11.4",
       "hashPath": "azure.identity.1.11.4.nupkg.sha512"
     },
+    "EntityFramework/6.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-u/M0OEfqxTUsL5BwzD66eBGm278/ozqdLK3JvMO6QwUxxc+z7ZUkTYm4suDhWRqzkc6mOhvXDQY5dZUwbldxyQ==",
+      "path": "entityframework/6.1.0",
+      "hashPath": "entityframework.6.1.0.nupkg.sha512"
+    },
     "Humanizer.Core/2.14.1": {
       "type": "package",
       "serviceable": true,
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.AspNetCoreCompat/0.3.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-i13RzIpbZyoOMWCntfzkNdS4blli2KQB1HA2dOfJ+zwWEd6+3o96L2qsJMFsHIUYksHUanI8YlQic99pF5AMKQ==",
+      "path": "microsoft.aspnet.identity.aspnetcorecompat/0.3.4",
+      "hashPath": "microsoft.aspnet.identity.aspnetcorecompat.0.3.4.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.Core/2.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s3u/o3iG5h0z7Ggukwo4soPwogD56ZrYbolGxTfw41zkuG6jAXUJT/V3EThqHJXGuCNvWSdSnnwAhPfT9Sn36g==",
+      "path": "microsoft.aspnet.identity.core/2.2.4",
+      "hashPath": "microsoft.aspnet.identity.core.2.2.4.nupkg.sha512"
+    },
+    "Microsoft.AspNet.Identity.EntityFramework/2.2.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ay5FMSwNF0tb9KiC4l4aqm7D1E6Da9nU3euI/X0UD1SuumJX7OkZ9LtZjU9xT3xmou3XLXO8DDcgrW6udSQk6Q==",
+      "path": "microsoft.aspnet.identity.entityframework/2.2.4",
+      "hashPath": "microsoft.aspnet.identity.entityframework.2.2.4.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/2.3.0": {
       "type": "package",
@@ -1946,6 +2115,13 @@
       "path": "microsoft.aspnetcore.dataprotection.abstractions/2.3.0",
       "hashPath": "microsoft.aspnetcore.dataprotection.abstractions.2.3.0.nupkg.sha512"
     },
+    "Microsoft.AspNetCore.DataProtection.Extensions/2.0.3": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-XJZrtdIW4di7cwW1ai9jo/gqVlxnMyt7BDV4rt9rH8N6Ub8Ju5DfadKZ5KMhyxXxw0P/KSlGNoHGQPgT8tqyiA==",
+      "path": "microsoft.aspnetcore.dataprotection.extensions/2.0.3",
+      "hashPath": "microsoft.aspnetcore.dataprotection.extensions.2.0.3.nupkg.sha512"
+    },
     "Microsoft.AspNetCore.Diagnostics.Abstractions/2.3.0": {
       "type": "package",
       "serviceable": true,
@@ -2009,12 +2185,12 @@
       "path": "microsoft.aspnetcore.identity/2.3.1",
       "hashPath": "microsoft.aspnetcore.identity.2.3.1.nupkg.sha512"
     },
-    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.5": {
+    "Microsoft.AspNetCore.Identity.EntityFrameworkCore/8.0.19": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-p3didtXm9oj3ThPtsM6ePyD7A+fD2DUMPpD3d9XfbiVd8S7Ugiynb7Xa7XjN9zih07PPhkdt9s1NmpYWoBgUlA==",
-      "path": "microsoft.aspnetcore.identity.entityframeworkcore/8.0.5",
-      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.8.0.5.nupkg.sha512"
+      "sha512": "sha512-AfAPM64ExRb+thCvYR315W6UW+bL8BKL+8m6cpInTU2Bt8FeM0z3sNRTxYefIBkpLEPwRlJmDFlUcqOFjumqiQ==",
+      "path": "microsoft.aspnetcore.identity.entityframeworkcore/8.0.19",
+      "hashPath": "microsoft.aspnetcore.identity.entityframeworkcore.8.0.19.nupkg.sha512"
     },
     "Microsoft.AspNetCore.JsonPatch/2.3.0": {
       "type": "package",
@@ -2394,12 +2570,12 @@
       "path": "microsoft.extensions.identity.core/8.0.19",
       "hashPath": "microsoft.extensions.identity.core.8.0.19.nupkg.sha512"
     },
-    "Microsoft.Extensions.Identity.Stores/8.0.5": {
+    "Microsoft.Extensions.Identity.Stores/8.0.19": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-R6OeFrKxq3kAP/r7Uz5By8QUKnvS7ah/ubM/xbSRfGoyftCTzn4Gd9CZMW+9G67tHR3UX+sZXcjDacD7CFG9Bg==",
-      "path": "microsoft.extensions.identity.stores/8.0.5",
-      "hashPath": "microsoft.extensions.identity.stores.8.0.5.nupkg.sha512"
+      "sha512": "sha512-qKZsubqbazNnC+v6el1rC9IHwJbNGyvuyAaULFA3BEE8xyo7WsEkc+kJRABac7LjJFl25ZUa9DN+xbLtapIBxg==",
+      "path": "microsoft.extensions.identity.stores/8.0.19",
+      "hashPath": "microsoft.extensions.identity.stores.8.0.19.nupkg.sha512"
     },
     "Microsoft.Extensions.Localization/8.0.11": {
       "type": "package",
@@ -2534,6 +2710,34 @@
       "path": "microsoft.netcore.targets/1.1.0",
       "hashPath": "microsoft.netcore.targets.1.1.0.nupkg.sha512"
     },
+    "Microsoft.Owin/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-64yZsGN9uRnXNVAyAT4F6KWmdDUJ6yX4uqzxKTdGANKH1oMt0IKZ7THRRa3mXIOo8iSu4tq/DCBUycUY9pXZzw==",
+      "path": "microsoft.owin/3.0.1",
+      "hashPath": "microsoft.owin.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-LPoUxaTKzmjs97wDCTtBIoRwp30Jkq9UFnoj+EfMFJv+XxjcvHE/D573LRomA568WhvXoI2cUiwhZFvqfbLMVg==",
+      "path": "microsoft.owin.security/3.0.1",
+      "hashPath": "microsoft.owin.security.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security.Cookies/3.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-l2GRNvO4oyxfpmWtfUYvN3fA4jWduE84UCNqWTj6yhYDSE76wI+W022qTTEMr0VoCDiJ0GGYdvAjQm3xbSsB9Q==",
+      "path": "microsoft.owin.security.cookies/3.0.1",
+      "hashPath": "microsoft.owin.security.cookies.3.0.1.nupkg.sha512"
+    },
+    "Microsoft.Owin.Security.Interop/2.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-k8xgLBhlbvj/GNuuy4fOKbOMBg9s5H6jGBg0sLLJmLNLNdDBqLAH9hIrgwq/asISjiyqz/ceWBMxEne5WZgnJw==",
+      "path": "microsoft.owin.security.interop/2.0.4",
+      "hashPath": "microsoft.owin.security.interop.2.0.4.nupkg.sha512"
+    },
     "Microsoft.SqlServer.Server/1.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2575,6 +2779,13 @@
       "sha512": "sha512-QYFyxhaABwmq3p/21VrZNYvCg3DaEoN/wUuw5nmfAf0X3HLjgupwhkEWdgfb9nvGAUIv3osmZoD3kKl4jxEmYQ==",
       "path": "newtonsoft.json.bson/1.0.2",
       "hashPath": "newtonsoft.json.bson.1.0.2.nupkg.sha512"
+    },
+    "Owin/1.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-OseTFniKmyp76mEzOBwIKGBRS5eMoYNkMKaMXOpxx9jv88+b6mh1rSaw43vjBOItNhaLFG3d0a20PfHyibH5sw==",
+      "path": "owin/1.0.0",
+      "hashPath": "owin.1.0.0.nupkg.sha512"
     },
     "System.Buffers/4.6.0": {
       "type": "package",
@@ -2843,6 +3054,16 @@
       "hashPath": "system.windows.extensions.6.0.0.nupkg.sha512"
     },
     "TaskManager.Identity/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaskManager.Shared/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TaskManager.Tasks/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

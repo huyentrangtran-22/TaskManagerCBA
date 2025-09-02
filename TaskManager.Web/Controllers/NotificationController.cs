@@ -1,8 +1,10 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using TaskManager.Notifications.Services;
 
 namespace TaskManager.Web.Controllers
 {
+    [Authorize]
     public class NotificationController : Controller
     {
         private readonly INotificationService _notificationService;

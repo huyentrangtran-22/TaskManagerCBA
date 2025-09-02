@@ -1,4 +1,5 @@
-﻿namespace TaskManager.Projects.Dtos
+﻿using TaskManager.Tasks.Dtos;
+namespace TaskManager.Projects.Dtos
 {
     public class ProjectDto
     {
@@ -16,5 +17,9 @@
         // Trạng thái phản hồi
         public string Message { get; set; } = string.Empty;
         public bool Success { get; set; } = true;
+        public string Status { get; set; } = "To Do"; // Giá trị mặc định
+        public List<TaskDto> Tasks { get; set; } = new List<TaskDto>();
+        public ProjectDto() { }
+
     }
 }
